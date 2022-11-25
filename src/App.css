@@ -1,38 +1,196 @@
 .App {
+  position: relative;
   text-align: center;
+  overflow-x: hidden;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+@media screen and (min-width: 1000px) {
+
+  .menu {
+    display: none;
   }
+
+  .open-cart {
+    display: none
+  }
+
+
+  .desktop-content {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+  }
+
+  .desktop-second-part {
+    margin-left: 5vw;
+    border: 1px solid black;
+    width: 30%;
+  }
+
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 414px) {
+
+main {
+  text-align: left;
+  padding-inline: 5%;
+  padding-top: 16px;
+  
+}
+
+main h1 {
+  color: var(--orange--);
+  font-size: 16px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+main p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--dark-grayish-blue--);
+}
+
+.open-cart {
+  position: absolute;
+  z-index: 3;
+  top: 140px;
+  left: 5%;
+  right: 5%;
+  border-radius: 10px;
+  background-color: var(--white--);
+}
+
+.open-cart h2 {
+  padding-inline: 5%;
+  font-size: 18px;
+  text-align: left;
+}
+
+.thumnail-and-text {
+  border-top: 1px solid rgb(98, 96, 96);
+  color: var(--grayish-blue--);
+  font-weight: 400;
+  padding-inline: 5%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: fit-content;
 }
 
-.App-link {
-  color: #61dafb;
+.thumnail-and-text img{
+    border-radius: 5px;
+    height: 9vh;
+    width: 19%;
+    height: 8vh;
+    margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-text {
+  text-align: left;
+  margin-right: 10%;
+}
+
+.cart-title {
+  margin-bottom: -6px;
+}
+
+
+.checkout-btn {
+  padding-inline: 5%;
+}
+
+.checkout-btn button {
+  margin-bottom: 30px;
+  color: var(--white--);
+  border: none;
+  border-radius: 10px;
+  background-color: var(--orange--);
+  font-size: 16px;
+  font-weight: 700;
+  height: 8vh;
+  width: 100%;
+}
+
+.checkout-btn button:hover {
+   background-color: rgb(236, 197, 123);
+}
+
+
+.cart-close {
+  display: none;
+}
+
+
+
+.menu {
+  position: absolute;
+  background-color: var(--white--);
+  z-index: 4;
+  top: 0px;
+  height: 100%;
+  width: 70%;
+  text-align: left;
+  box-shadow: 100px 100px 240px black;
+  transition: 600ms ease;
+  transform-origin:left ;
+  transform: scaleX(0);
+}
+
+
+.display {
+  transform: scaleX(1)
+}
+
+.no-display {
+  transform: scaleX(0);
+}
+
+
+.menu ul {
+  text-align: left;
+  list-style-type: none;
+}
+
+.menu ul li {
+  font-weight: 700;
+  margin-bottom: 3vh;
+}
+#cross-logo {
+  color: var(--grayish-blue--);
+  margin-top: 5vh;
+  margin-bottom: 8vh;
+}
+
+.menu-desktop {
+  display: none;
+}
+
 }

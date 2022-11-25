@@ -1,0 +1,100 @@
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+    svg {
+        display: none;
+    }
+
+    .carroussel {
+        border: 1px solid black;
+        margin-right: 5vw;
+        width: 30%;
+    }
+
+    .main-img {
+        height: 58vh;
+        width: 100%;
+    }
+
+    .desktop-imgs {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+    .desktop-imgs li img {
+        border-radius: 8px;
+        border: 3px solid black;
+        height:12vh;
+        filter: blur(8px);
+        width: 6vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 414px) {
+    
+
+    .carroussel {
+        position: relative;
+        padding: 0px;
+    }
+
+    .carroussel img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .desktop-imgs {
+        display: none;
+    }
+
+    .arrow {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        background: rgb(245, 242, 242);
+        border-radius: 25px;
+    }
+
+
+    .left-arrow {
+        transform: rotate(180deg);
+        top: 20.5vh;
+        height: 50px;
+        width: 50px;
+        left: 2vw;
+    }
+    
+    .right-arrow {
+        top: 20vh;
+        height: 50px;
+        width: 50px;
+        right: 2vw;
+    }
+
+}
