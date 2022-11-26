@@ -16,16 +16,19 @@ const Price = (props) => {
         <p>$250.00</p>
         </div>
        
+
+       <div className="desktop-format">
        <div className="plus-minus">
         <FaMinus className="minus-icon" onClick={() => Quantity === 0? null : setQuantity(Quantity - 1)} />
-             <span>{Quantity}</span>
+            <span>{Quantity}</span>
          <FaPlus className="plus-icon" onClick={() => setQuantity(Quantity + 1)}/>
        </div>
-
+       
        <div className="add-cart" onClick={() => props.setItems({quantity: Quantity, price: price})}>
          <BsCart3 />
          <p>Add to cart</p>
        </div>
+      </div>
     </div>
   )
 }

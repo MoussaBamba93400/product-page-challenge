@@ -4,34 +4,33 @@
 
 
 @media screen and (min-width: 1000px) {
-    svg {
-        display: none;
-    }
+    
 
     .carroussel {
-        border: 1px solid black;
         margin-right: 5vw;
         width: 30%;
     }
 
+    .carroussel svg {
+        display: none;
+    }
+
     .main-img {
-        height: 58vh;
+        border-radius: 20px;
+        height: 54vh;
         width: 100%;
     }
 
     .desktop-imgs {
         display: flex;
         justify-content: space-between;
-        border: 1px solid black;
         padding: 0px;
         list-style-type: none;
     }
 
     .desktop-imgs li img {
         border-radius: 8px;
-        border: 3px solid black;
         height:12vh;
-        filter: blur(8px);
         width: 6vw;
     }
 }

@@ -16,8 +16,6 @@
         align-items: center;
         justify-content: space-between;
         width: fit-content;
-        border: 1px solid black;
-    
     }
     
     .logo-menu-icon ul {
@@ -26,17 +24,12 @@
         list-style-type: none;
         background-color: transparent;
         margin-left: 3vw;
-        border: 1px solid  black;
     }
     
     .logo-menu-icon ul li {
         margin-inline: 2.6vw;
     }
 
-    .logo-menu-icon svg {
-        border: 1px solid black;
-        background-color: black;
-    }
     
     
     
@@ -48,7 +41,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border: 1px solid black;
         width: 7vw;
     }
     

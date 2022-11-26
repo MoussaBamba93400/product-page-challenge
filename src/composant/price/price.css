@@ -1,4 +1,77 @@
 
+@media screen and (min-width: 1000px) {
+    .price h1 {
+        margin-bottom: 1vh;
+    }
+
+    .price h1 span {
+        color: var(--orange--);
+        border-radius: 8px;
+        padding: 3px;
+        vertical-align: middle;
+        font-size: 1vw;
+        background-color: var(--pale-orange--);
+    }
+
+
+    .price p {
+        color: var(--grayish-blue--);
+        text-decoration: line-through;
+        font-weight: 700;
+    }
+
+
+
+    .desktop-format {
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+
+    .plus-minus {
+        display: flex;
+        width: 25%;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        background-color: var(--light-grayish-blue--);
+        padding-inline: 8%;
+        transition: 800ms ease;
+    }
+
+    .plus-minus:hover {
+        cursor: pointer;
+        background-color: rgb(233, 228, 228);
+    }
+
+    .minus-icon {
+        color: var(--orange--);
+    }
+
+    .plus-icon {
+        color: var(--orange--);
+    }
+
+    .add-cart {
+        color: var(--white--);
+        font-weight: 700;
+        background-color: var(--orange--);
+        border-radius: 8px;
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 4px 4px 8px grey;
+        align-items: center;
+        transition: 300ms;
+    }
+
+    .add-cart:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 8px grey;
+    }
+}
 
 
 
@@ -62,7 +135,6 @@
 
 .minus-icon {
     color: var(--orange--);
-    
 }
 
 
