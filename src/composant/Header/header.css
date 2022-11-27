@@ -28,9 +28,13 @@
     
     .logo-menu-icon ul li {
         margin-inline: 2.6vw;
+        transition: 500ms;
     }
 
-    
+    .logo-menu-icon ul li:hover  {
+            color: rgb(212, 236, 236);
+            cursor: pointer;
+    }
     
     
     .menu-logo {
